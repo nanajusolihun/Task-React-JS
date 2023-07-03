@@ -6,6 +6,7 @@ import AboutMe from "./Pages/AboutMe.jsx";
 import Projects from "./Pages/Projects.jsx";
 import ContactMe from "./Pages/ContactMe.jsx";
 import NotFound from "./Pages/NotFound.jsx";
+import Learn from "./Pages/Learn.jsx";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contactme" element={<ContactMe />} />
+          <Route path="/learn" element={<Learn />} />
         </Route>
         <Route path="/*" element={<NotFound />} />
       </Routes>

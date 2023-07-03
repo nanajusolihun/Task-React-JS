@@ -4,19 +4,20 @@
 import { Outlet } from "react-router-dom";
 import Navigation from "./Components/Navigation";
 import { Container } from "react-bootstrap";
-import Home from "./Pages/Home"
-
+import store from "./App/store.js";
+import { Provider } from "react-redux";
 
 function App() {
   return (
-    <>
-      <Navigation />
-      {/* <Home/> */}
+    <Provider store={store}>
+      <div>
+        <Navigation />
 
-      <Container>
-        <Outlet />
-      </Container>
-    </>
+        <Container>
+          <Outlet />
+        </Container>
+      </div>
+    </Provider>
   );
 }
 

@@ -24,6 +24,9 @@ const Navigation = () => {
           <Link to="/contactme" className="text-white mx-2 text-decoration-none fw-semibold">
             Contact Me
           </Link>
+          <Link to="/learn" className="text-white mx-2 text-decoration-none fw-semibold">
+            Redux
+          </Link>
         </Nav>
       </Container>
     </Navbar>
